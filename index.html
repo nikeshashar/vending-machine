@@ -20,6 +20,14 @@
     <!-- Load the QUnit Testing Framework from CDN - this is the important bit ... -->
     <script src="https://code.jquery.com/qunit/qunit-1.18.0.js"></script>
     <script>
+    function getChange (totalPayable, cashPaid) {
+      var change = []
+      // your code goes here
+      return change;
+    };
+    </script>
+    <!-- failing test -->
+    <script>
       test('getChange(1,1) should equal [] - an empty array', function(assert) {
         var result = getChange(1, 1); //no change/coins just an empty array
         var expected = [];
