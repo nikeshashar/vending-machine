@@ -26,8 +26,14 @@
       return change;
     };
     </script>
-    <!-- failing test -->
+    <!-- tests section(?) -->
     <script>
+      test('getChange(215, 300) should return [50, 20, 10, 5]', function(assert) {
+        var result = getChange(215, 300);
+        var expected = [50, 20, 10, 5];
+        assert.deepEqual(result, expected)
+      })
+
       test('getChange(1,1) should equal [] - an empty array', function(assert) {
         var result = getChange(1, 1); //no change/coins just an empty array
         var expected = [];
